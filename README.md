@@ -7,7 +7,7 @@
 
 # Usage
 
-## You can access the page via this link: https://hoggi90.github.io/New-Hoger-Shoresh-Portfolio/
+## You can access the page via this link: https://hoggi90.github.io/Console-Finances/
 
 ## Right-click on the browser and choose inspect, then click on console to view the result.
 
