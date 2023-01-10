@@ -9,7 +9,9 @@
 
 ## You can access the page via this link: https://hoggi90.github.io/New-Hoger-Shoresh-Portfolio/
 
-Right-click on the browser and choose inspect, then click on console to view the result.
+## Right-click on the browser and choose inspect, then click on console to view the result.
 
 # Screenshot
+
+![Screenshot](./images/screenshot.png)
 
