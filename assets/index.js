@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
@@ -89,15 +89,16 @@ var finances = [
 
 
 console.log("Financial Analysis");
+console.log("-------------------")
 
 let totalMonths = finances.length;
-console.log("Total Months:", totalMonths);
+console.log(`Total Months: ${totalMonths} Months`);
 
 let sum = 0;
 for (let i = 0; i < finances.length; i++) {
   sum += finances[i][1];
 }
-console.log("Total: $", sum);
+console.log(`Net Total Profit/Loss: $${sum.toLocaleString()}`);
 
 let totalDifference = 0;
 for (let i = 1; i < finances.length; i++) {
@@ -107,9 +108,11 @@ for (let i = 1; i < finances.length; i++) {
     totalDifference += difference;
   }
 
-let average = totalDifference / totalMonths;
+let average = totalDifference / 85;
 average = Math.round(average * 100) / 100;
-console.log("Total Average: $" , average);
+console.log(`Average Change: $${average.toLocaleString()}`);
+
+
 
 let greatestIncrease = ['', -Infinity];
 let greatestDecrease = ['', Infinity];
@@ -127,5 +130,5 @@ for (let i = 1; i < finances.length; i++) {
   }
 }
 
-  console.log(`Greatest increase in profits ${greatestIncrease[0]} $${greatestIncrease[1]}.`);
-  console.log(`Greatest decrease in profits ${greatestDecrease[0]} $${greatestDecrease[1]}.`);
+  console.log(`Greatest Increase In Profits: ${greatestIncrease[0]} ($${greatestIncrease[1].toLocaleString()})`);
+  console.log(`Greatest Decrease In Profits: ${greatestDecrease[0]} ($${greatestDecrease[1].toLocaleString()})`);
